@@ -17,16 +17,27 @@ public class Restaurant {
         this.closingTime = closingTime;
     }
 
+    // Given the current time, opening time and closing time, this method
+    // returns if the restaurant is open or not
     public boolean isRestaurantOpen() {
-        return true;
-        //DELETE ABOVE STATEMENT AND WRITE CODE HERE
+        if(getCurrentTime().isAfter(this.openingTime ) && getCurrentTime().isBefore(this.closingTime)) {
+            return true;
+        }
+        else {
+            return false;
+        }
     }
 
     public LocalTime getCurrentTime(){ return  LocalTime.now(); }
 
+    // This method returns a List of items that are listed in the menu
     public List<Item> getMenu() {
-        return null;
-        //DELETE ABOVE RETURN STATEMENT AND WRITE CODE HERE
+        if (this.menu.size() > 0) {
+            return this.menu ;
+        }
+        else {
+            return null;
+        }
     }
 
     private Item findItemByName(String itemName){
@@ -41,7 +52,7 @@ public class Restaurant {
         Item newItem = new Item(name,price);
         menu.add(newItem);
     }
-    
+
     public void removeFromMenu(String itemName) throws itemNotFoundException {
 
         Item itemToBeRemoved = findItemByName(itemName);
