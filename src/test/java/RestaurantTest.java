@@ -1,9 +1,10 @@
-import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.mockito.Mockito;
 
 import java.time.LocalTime;
+import java.util.ArrayList;
+import java.util.List;
 
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -60,4 +61,34 @@ class RestaurantTest {
                 ()->restaurant.removeFromMenu("French fries"));
     }
     //<<<<<<<<<<<<<<<<<<<<<<<MENU>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+    //>>>>>>>>>>>>>>>>>>>>>>>>>>>ORDER<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+    @Test
+    public void search_for_item_from_menu_should_return_price_of_500() {
+        //Given
+        Restaurant spiedRestaurant = Mockito.spy(restaurant);
+
+        //When
+        spiedRestaurant.addToMenu("Pizza", 500);
+
+        //Then
+        assertEquals(500, spiedRestaurant.findItemPrice("Pizza" ));
+    }
+
+    @Test
+    public void calculate_order_value_should_return_value_of_844_after_adding_two_items_to_order_list() {
+        // Given
+        Restaurant spiedRestaurant = Mockito.spy(restaurant);
+        List<String> testItemNames = new ArrayList<String>();
+        testItemNames.add("Pizza");
+        testItemNames.add("Burger");
+
+        //When
+        Mockito.when(spiedRestaurant.findItemPrice("Pizza")).thenReturn(500);
+        Mockito.when(spiedRestaurant.findItemPrice("Burger")).thenReturn(384);
+
+        //Then
+        assertEquals(884, spiedRestaurant.calculateOrderValue(testItemNames));
+    }
+    //<<<<<<<<<<<<<<<<<<<<<<<ORDER>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 }

@@ -61,6 +61,22 @@ public class Restaurant {
 
         menu.remove(itemToBeRemoved);
     }
+
+    /*Given  a list of itemName, this method finds out price of each item and
+    returns the total order value*/
+    public int calculateOrderValue(List<String> itemNames) {
+        // Will add body in Part 3: Solution
+        int totalOrderValue = 0;
+        return totalOrderValue ;
+
+    }
+
+    /*Given  an itemName, this method returns the price for that item */
+    public int findItemPrice(String itemName) {
+        // Will add body in Part 3: Solution
+        return -1;
+    }
+
     public void displayDetails(){
         System.out.println("Restaurant:"+ name + "\n"
                 +"Location:"+ location + "\n"

@@ -3,13 +3,28 @@
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="9d368a6d-c639-4b71-b1d5-260c3476b9a8" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Restaurant.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Restaurant.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/RestaurantService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/RestaurantService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/RestaurantServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/RestaurantServiceTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/RestaurantTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/RestaurantTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -68,21 +83,31 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="RestaurantTest.adding_item_to_menu_should_increase_menu_size_by_1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="RestaurantTest.calculate_total_price_should_return_value_of_388" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="library-demo" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="RestaurantTest" />
-      <option name="METHOD_NAME" value="adding_item_to_menu_should_increase_menu_size_by_1" />
+      <option name="METHOD_NAME" value="calculate_total_price_should_return_value_of_388" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="RestaurantTest.is_restaurant_open_should_return_true_if_time_is_between_opening_and_closing_time" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="RestaurantTest.calculate_total_price_should_return_value_of_884" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="library-demo" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="RestaurantTest" />
-      <option name="METHOD_NAME" value="is_restaurant_open_should_return_true_if_time_is_between_opening_and_closing_time" />
+      <option name="METHOD_NAME" value="calculate_total_price_should_return_value_of_884" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RestaurantTest.find_item_test_case" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="library-demo" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="RestaurantTest" />
+      <option name="METHOD_NAME" value="find_item_test_case" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -92,8 +117,9 @@
       <list>
         <item itemvalue="JUnit.RestaurantServiceTest" />
         <item itemvalue="JUnit.RestaurantTest" />
-        <item itemvalue="JUnit.RestaurantTest.is_restaurant_open_should_return_true_if_time_is_between_opening_and_closing_time" />
-        <item itemvalue="JUnit.RestaurantTest.adding_item_to_menu_should_increase_menu_size_by_1" />
+        <item itemvalue="JUnit.RestaurantTest.find_item_test_case" />
+        <item itemvalue="JUnit.RestaurantTest.calculate_total_price_should_return_value_of_884" />
+        <item itemvalue="JUnit.RestaurantTest.calculate_total_price_should_return_value_of_388" />
       </list>
     </recent_temporary>
   </component>
@@ -107,32 +133,47 @@
       <updated>1610301949813</updated>
       <workItem from="1610302018153" duration="237000" />
       <workItem from="1610347234539" duration="146000" />
+      <workItem from="1610347410071" duration="9259000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="WindowStateProjectService">
     <state x="184" y="109" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1610301991539">
       <screen x="0" y="23" width="1440" height="837" />
     </state>
     <state x="184" y="109" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1440.837@0.23.1440.837" timestamp="1610301991539" />
-    <state width="1398" height="243" key="GridCell.Tab.0.bottom" timestamp="1610347380281">
+    <state width="1398" height="243" key="GridCell.Tab.0.bottom" timestamp="1610386177158">
       <screen x="0" y="23" width="1440" height="837" />
     </state>
-    <state width="1398" height="243" key="GridCell.Tab.0.bottom/0.23.1440.837@0.23.1440.837" timestamp="1610347380281" />
-    <state width="1398" height="243" key="GridCell.Tab.0.center" timestamp="1610347380280">
+    <state width="1398" height="243" key="GridCell.Tab.0.bottom/0.23.1440.837@0.23.1440.837" timestamp="1610386177158" />
+    <state width="1398" height="243" key="GridCell.Tab.0.center" timestamp="1610386177158">
       <screen x="0" y="23" width="1440" height="837" />
     </state>
-    <state width="1398" height="243" key="GridCell.Tab.0.center/0.23.1440.837@0.23.1440.837" timestamp="1610347380280" />
-    <state width="1398" height="243" key="GridCell.Tab.0.left" timestamp="1610347380280">
+    <state width="1398" height="243" key="GridCell.Tab.0.center/0.23.1440.837@0.23.1440.837" timestamp="1610386177158" />
+    <state width="1398" height="243" key="GridCell.Tab.0.left" timestamp="1610386177157">
       <screen x="0" y="23" width="1440" height="837" />
     </state>
-    <state width="1398" height="243" key="GridCell.Tab.0.left/0.23.1440.837@0.23.1440.837" timestamp="1610347380280" />
-    <state width="1398" height="243" key="GridCell.Tab.0.right" timestamp="1610347380281">
+    <state width="1398" height="243" key="GridCell.Tab.0.left/0.23.1440.837@0.23.1440.837" timestamp="1610386177157" />
+    <state width="1398" height="243" key="GridCell.Tab.0.right" timestamp="1610386177158">
       <screen x="0" y="23" width="1440" height="837" />
     </state>
-    <state width="1398" height="243" key="GridCell.Tab.0.right/0.23.1440.837@0.23.1440.837" timestamp="1610347380281" />
+    <state width="1398" height="243" key="GridCell.Tab.0.right/0.23.1440.837@0.23.1440.837" timestamp="1610386177158" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/library_demo$RestaurantTest.ic" NAME="RestaurantTest Coverage Results" MODIFIED="1610384919849" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
 </project>
